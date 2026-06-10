@@ -89,7 +89,7 @@ jobs:
 
       - name: Run PHPUnit tests
         working-directory: frontend
-        run: vendor/bin/phpunit
+        run: php vendor/bin/phpunit
 
       - name: Run Cypress E2E tests
         run: npx cypress run
