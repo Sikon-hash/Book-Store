@@ -40,7 +40,7 @@ jobs:
 
       - name: Compile Java tests
         working-directory: backend
-        run: javac -d temp-classes -cp "temp-classes;lib/*" BookStoreServerTest.java
+        run: javac -d temp-classes -cp "temp-classes:lib/*" BookStoreServerTest.java
 
       - name: Run Java tests with JaCoCo coverage
         working-directory: backend
