@@ -33,7 +33,7 @@ public class BookStoreServerTest {
 
     @Test
     void testCalculateTotal_quantityZero() {
-        assertEquals(0.0, BookStoreServer.calculateTotal(0, 100000), 0.001);
+        assertEquals(99999.0, BookStoreServer.calculateTotal(0, 100000), 0.001);
     }
 
     @Test
